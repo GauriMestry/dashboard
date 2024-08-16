@@ -2,6 +2,10 @@
 
 This is a React-based dashboard application that allows users to manage and interact with widgets categorized into different sections. The application leverages Redux for state management and Tailwind CSS for styling.
 
+## **Deployed version**
+
+https://dashboard-assignment-demo.netlify.app/
+
 ## **Technologies Used:**
 
 - React JS
