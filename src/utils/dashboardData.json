@@ -1,0 +1,158 @@
+{
+    "data": {
+        "categories": [
+            {
+                "id": 1,
+                "name": "CSPM Executive Dashboard",
+                "widgets": [
+                    {
+                        "id": 1,
+                        "name": "Cloud Accountants",
+                        "des": "CSPM Executive Dashboard",
+                        "chartType": "doughnut",
+                        "visibility": true,
+                        "chartData": [
+                            {
+                                "label": "Connected",
+                                "value": 2,
+                                "color": "#3B82F6"
+                            },
+                            {
+                                "label": "Not Connected",
+                                "value": 2,
+                                "color": "#BFDBFE"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Cloud Account Risk Management",
+                        "des": "CSPM Executive Dashboard",
+                        "chartType": "doughnut",
+                        "visibility": true,
+                        "chartData": [
+                            {
+                                "label": "Failed",
+                                "value": 1689,
+                                "color": "#DC2626"
+                            },
+                            {
+                                "label": "Warning",
+                                "value": 681,
+                                "color": "#FBBF24"
+                            },
+                            {
+                                "label": "Not Available",
+                                "value": 36,
+                                "color": "#6b7280"
+                            },
+                            {
+                                "label": "Passed",
+                                "value": 7253,
+                                "color": "#059669"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "CWPP Dashboard",
+                "widgets": [
+                    {
+                        "id": 3,
+                        "name": "Top 5 Namespace Specific Alerts",
+                        "des": "CWPP Dashboard",
+                        "chartType": "none",
+                        "visibility": true,
+                        "chartData": [
+                            {
+                                "label": "Passed",
+                                "value": 7253,
+                                "color": "#059669"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "Workload Alerts",
+                        "des": "CWPP Dashboard",
+                        "chartType": "none",
+                        "visibility": true,
+                        "chartData": [
+                            {
+                                "label": "Passed",
+                                "value": 7253,
+                                "color": "#059669"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Registery Scan",
+                "widgets": [
+                    {
+                        "id": 5,
+                        "name": "Image Risk Assessment",
+                        "des": "Registery Scan",
+                        "chartType": "bar",
+                        "visibility": true,
+                        "chartData": [
+                            {
+                                "label": "Critical",
+                                "value": 9,
+                                "color": "#7F1D1D"
+                            },
+                            {
+                                "label": "High",
+                                "value": 150,
+                                "color": "#DC2626"
+                            },
+                            {
+                                "label": "Medium",
+                                "value": 203,
+                                "color": "#D97706"
+                            },
+                            {
+                                "label": "Low",
+                                "value": 50,
+                                "color": "#6b7280"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "name": "Image Security Issue",
+                        "des": "Registery Scan",
+                        "chartType": "bar",
+                        "visibility": true,
+                        "chartData": [
+                            {
+                                "label": "Critical",
+                                "value": 2,
+                                "color": "#7F1D1D"
+                            },
+                            {
+                                "label": "High",
+                                "value": 2,
+                                "color": "#DC2626"
+                            },
+                            {
+                                "label": "Medium",
+                                "value": 4,
+                                "color": "#D97706"
+                            },
+                            {
+                                "label": "Low",
+                                "value": 3,
+                                "color": "#6b7280"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
