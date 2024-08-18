@@ -19,9 +19,9 @@ function ContentHeader(): ReactElement {
           flexOption="flex-row-reverse"
         />
         <button
-          onClick={() =>
-            dispatch(defaultWidgets(dashboardData?.data?.categories))
-          }
+          onClick={() => {
+            dispatch(defaultWidgets(dashboardData?.data?.categories));
+          }}
           className="bg-white rounded-xl text-sm font-semibold text-grayDark border-1 p-2 border-grayLight sm:text-lg md:text-lg xl:text-lg sm:font-bold md:font-bold xl:font-bold sm:p-4 md:p-4 xl:p-4 sm:border-2 md:border-2 xl:border-2"
         >
           <ArrowPathIcon className="size-4 md:size-6" />

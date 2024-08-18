@@ -20,7 +20,7 @@ function Checkbox({
     <label className="flex items-center space-x-2 cursor-pointer">
       <input
         type="checkbox"
-        className="bg-white checked:bg-widgetText checked:border-widgetText"
+        className="accent-widgetText"
         id="customCheckbox"
         checked={checkBoxChecked}
         onChange={() => {

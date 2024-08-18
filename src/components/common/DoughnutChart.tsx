@@ -32,8 +32,8 @@ export default function DoughnutChart({
     })) ?? [];
 
   return (
-    <div className="flex flex-row px-2 pt-4 h-32 justify-between items-center sm:h-48 md:h-48 xl:h-48 sm:px-4 md:px-4 xl:px-4 sm:pt-10 md:pt-10 xl:pt-10">
-      <div className="h-32 sm:h-48 md:h-48 xl:h-48">
+    <div className="flex flex-row px-2 pt-4 h-32 justify-between items-center sm:h-32 md:h-32 xl:h-32 sm:px-4 md:px-4 xl:px-4 sm:pt-10 md:pt-10 xl:pt-10">
+      <div className="h-32 sm:h-32 md:h-32 xl:h-32">
         <DoughnutCommon
           data={data}
           labels={labels}

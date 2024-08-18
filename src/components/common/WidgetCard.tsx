@@ -7,7 +7,6 @@ import Button from "./Button";
 import Card from "./Card";
 import DoughnutChart from "./DoughnutChart";
 import NoChart from "./NoChart";
-import Shimmer from "./Shimmer";
 import TextChart from "./TextChart";
 
 type WidgetProps = {
@@ -21,21 +20,26 @@ export default function WidgetCard({ category }: WidgetProps): ReactElement {
 
   return (
     <>
-      {filteredWidgets?.length ? (
+      {filteredWidgets?.length && (
         <div className="flex flex-col items-center sm:flex-row md:flex-row xl-flex-row sm:flex-wrap md:flex-wrap xl:flex-wrap">
           {filteredWidgets?.map((widget, index) => (
             <Card
               key={widget?.id + index}
               Component={
                 <>
-                  <h5 className="font-sans text-sm font-semibold sm:text-xl md:text-xl xl:text-xl sm:font-bold md:font-bold xl:font-bold">
-                    {widget?.name}
-                  </h5>
-                  {widget?.chartType === "doughnut" ? (
+                  {widget?.name !== undefined && (
+                    <h5 className="font-sans text-sm font-semibold sm:text-lg md:text-lg xl:text-lg sm:font-bold md:font-bold xl:font-bold">
+                      {widget?.name}
+                    </h5>
+                  )}
+                  {widget?.chartType === "doughnut" &&
+                  widget?.chartData !== undefined ? (
                     <DoughnutChart widget={widget} />
-                  ) : widget?.chartType === "bar" ? (
+                  ) : widget?.chartType === "bar" &&
+                    widget?.chartData !== undefined ? (
                     <BarChart widget={widget} />
-                  ) : widget?.chartType === "text" ? (
+                  ) : widget?.chartType === "text" &&
+                    widget?.chartData !== undefined ? (
                     <TextChart des={widget?.des} />
                   ) : (
                     <NoChart />
@@ -56,8 +60,6 @@ export default function WidgetCard({ category }: WidgetProps): ReactElement {
             }
           />
         </div>
-      ) : (
-        <Shimmer />
       )}
     </>
   );

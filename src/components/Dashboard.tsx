@@ -14,7 +14,7 @@ export default function Dashboard(): ReactElement {
   }, [dispatch]);
 
   return (
-    <div className="bg-blueBg">
+    <div className="min-h-screen bg-[#DBEAFE]">
       <Header />
       <ContentHeader />
       <Categories />

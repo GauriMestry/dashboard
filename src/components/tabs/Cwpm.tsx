@@ -9,19 +9,21 @@ import NewWidgetForm from "../NewWidgetForm";
 type ContentProps = {
   id: number;
 };
+
 export type CheckedWidget = {
   widgetId: number;
   visibility: boolean;
 };
+
 export default function Cwpm({ id }: ContentProps): ReactElement {
   const dispatch = useDispatch();
-
   const existingWidgets = useSelector(
     (state: RootState) => state?.widgetOperator?.updatedWidgets
   );
   const categories: Category[] = useSelector(
     (state: RootState) => state?.widgetOperator?.categories
   );
+
   const filteredWidgets: WidgetState[] =
     categories?.find((category) => category?.id === id)?.widgets ?? [];
 
@@ -33,7 +35,6 @@ export default function Cwpm({ id }: ContentProps): ReactElement {
           w.widgetId === widget.widgetId ? widget : w
         )
       : [...existingWidgets, widget];
-
     dispatch(setWidgetForUpdate(updatedWidgets));
   };
 
